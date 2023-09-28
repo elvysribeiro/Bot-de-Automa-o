@@ -6,7 +6,7 @@ import pyautogui
 import time
 
 #  Abrir o chrome
-pyautogui.PAUSE = 1
+pyautogui.PAUSE = .5
 pyautogui.press("win")
 pyautogui.write("chrome")
 pyautogui.press("enter")
@@ -20,10 +20,11 @@ pyautogui.press("enter")
 time.sleep(3)
 
 #  Fazer o login
-pyautogui.click(x=375, y=611)
+pyautogui.click(x=-964, y=405)
 pyautogui.write("elvyssribeiro@gmail.com")
-
-
+pyautogui.press("tab")
+pyautogui.write("elvys_9035")
+pyautogui.press("enter")
 # Passo 3: Importar a base de dados de produtos
 # Passo 4: Cadastrar 1 produto
 # Passo 5: Repetir o cadastro para todos os produtos
